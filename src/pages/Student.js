@@ -60,7 +60,7 @@ function Student() {
         <td>
           <Link
             to={`/students/${item.id}/edit`}
-            className="btn btn-success btn-sm"
+            className="btn btn-success btn-sm me-2"
           >
             Edit
           </Link>
