@@ -34,12 +34,14 @@ function Student() {
             alert(errors.response.data.message);
             thisClicked.innerText = "Delete";
           }
+
           if (errors.response.status === 500) {
             alert(errors.response.data);
           }
         }
       });
   };
+
   if (loading) {
     return (
       <div>
@@ -75,6 +77,7 @@ function Student() {
       </tr>
     );
   });
+
   return (
     <div className="container mt-5">
       <div className="row">
